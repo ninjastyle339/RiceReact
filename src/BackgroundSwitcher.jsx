@@ -22,7 +22,7 @@ function BackgroundSwitcher() {
         // document.body.style.backgroundSize = "cover";
         //document.body.style.backgroundPosition = "center";
         document.documentElement.style.setProperty("--bg-image",
-            `/RiceReact/url(${background_images[index]})`
+            `url(/RiceReact/${background_images[index]})`
         );
         extractColor(background_images[index]);
     }, [index]);
