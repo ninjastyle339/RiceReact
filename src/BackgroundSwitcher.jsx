@@ -11,7 +11,7 @@ const extractColor = (imageSrc) => {
     };
 };
 const background_images = ["bedroom.png", "wallhaven-futuristic.jpg", "wallhaven-pixel.png", "wallhaven-space.jpg", "wallhaven-terrain.jpg", "wallhaven-train.jpg"];
-
+const base = import.meta.env.BASE_URL;
 function BackgroundSwitcher() {
     const [index, setIndex] = useState(persistedIndex);
     let theme = false;
@@ -22,7 +22,7 @@ function BackgroundSwitcher() {
         // document.body.style.backgroundSize = "cover";
         //document.body.style.backgroundPosition = "center";
         document.documentElement.style.setProperty("--bg-image",
-            `url(/RiceReact/${background_images[index]})`
+            `url(${base}${background_images[index]})`
         );
         extractColor(background_images[index]);
     }, [index]);
