@@ -32,10 +32,3 @@ A browser-based Linux ricing desktop environment built with React. Inspired by t
 - Pure CSS (no UI libraries)
 - ColorThief (via CDN) for color extraction
 
-## Getting Started
-
-```bash
-npm install
-npm run dev
-```
-
