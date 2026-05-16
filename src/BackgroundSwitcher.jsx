@@ -10,7 +10,7 @@ const extractColor = (imageSrc) => {
         document.documentElement.style.setProperty("--primary", `rgb(${r}, ${g}, ${b})`);
     };
 };
-const background_images = ["bedroom.png", "wallhaven-futuristic.jpg", "wallhaven-pixel.png", "wallhaven-space.jpg", "wallhaven-terrain.jpg", "wallhaven-train.jpg"];
+const background_images = ["bedroom.png", "wallhaven-futuristic.jpg", "wallhaven-space.jpg", "wallhaven-terrain.jpg", "wallhaven-train.jpg"];
 const base = import.meta.env.BASE_URL;
 function BackgroundSwitcher() {
     const [index, setIndex] = useState(persistedIndex);

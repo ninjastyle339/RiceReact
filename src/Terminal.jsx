@@ -85,6 +85,9 @@ const Terminal = ({ onFocus, zindex, isActive }) => {
                 Setopen(prev => !prev);
             }
         }
+        if (!isActive) {
+            inputRef.current?.blur();
+        }
         window.addEventListener("keydown", handle);
         return () => window.removeEventListener("keydown", handle);
     }, [isActive]);
