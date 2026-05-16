@@ -26,8 +26,6 @@ A browser-based Linux ricing desktop environment built with React. Inspired by t
 | `j` | Previous wallpaper (when switcher active) |
 | `k` | Next wallpaper (when switcher active) |
 
-## Credits
-
 ### Wallpapers
 - [bedroom.png](#) — [link to original](https://wallpapercave.com/w/wp13498566)
 - [wallhaven-futuristic.jpg](#) — [link to original](https://wallhaven.cc/w/3lxz2d)
