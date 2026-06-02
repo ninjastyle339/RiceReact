@@ -1,6 +1,6 @@
 # RiceReact 
 
-A browser-based Linux ricing desktop environment built with React. Inspired by the linux ricing community.
+A browser-based Linux ricing desktop environment built with React. Not for phones...
 
 ## Features
 
