@@ -7,9 +7,9 @@ const Terminal = ({ onFocus, zindex, isActive }) => {
     const centerx = window.innerWidth / 2;
     const centery = window.innerHeight / 2;
     const ypos = window.innerHeight * 0.4;
-    const [pos, setPos] = useState({ x: centerx - centerx / 2, y: centery - ypos });
+    const [pos, setPos] = useState({ x: centerx - centerx / 2, y: centery - ypos/2 });
     const spinner = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
-    const [size, setSize] = useState({ width: window.innerWidth * 0.5, height: window.innerHeight * 0.4 });
+    const [size, setSize] = useState({ width: Math.max(550, window.innerWidth * 0.5), height: Math.max(500, window.innerHeight * 0.4) });
     const drag = (e) => {
         /*old pos + delta */
         const oldX = pos.x;
@@ -33,7 +33,7 @@ const Terminal = ({ onFocus, zindex, isActive }) => {
         const startY = e.clientY;
 
         const move = (e) => {
-            const newWidth = Math.max(600, oldW + (e.clientX - startX));
+            const newWidth = Math.max(550, oldW + (e.clientX - startX));
             const newHeight = Math.max(500, oldH + (e.clientY - startY));
             setSize({ width: newWidth, height: newHeight });
         }

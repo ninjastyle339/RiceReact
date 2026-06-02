@@ -6,9 +6,9 @@ import Terminal from './Terminal';
 
 
 const Window = ({ isActive }) => {
-    const [zindex, setZindex] = useState(100);
-    const [notepadzindex, setNotepadzindex] = useState(100);
-    const [terminalzindex, setTerminalzindex] = useState(100);
+    const [zindex, setZindex] = useState(201);
+    const [notepadzindex, setNotepadzindex] = useState(201);
+    const [terminalzindex, setTerminalzindex] = useState(201);
 
     const onFocus = (setter) => {
         setZindex(prev => prev + 1);
