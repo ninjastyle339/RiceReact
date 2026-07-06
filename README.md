@@ -19,10 +19,10 @@ A browser-based Linux ricing desktop environment built with React.
 
 | Key | Action |
 |-----|--------|
-| `alt+t` | Toggle terminal |
+| `ctrl+,` | Toggle terminal |
 | `ctrl+m` | Toggle notepad |
-| `ctrl+b` | Toggle background switcher |
-| `ctrl+i` | Switch to next workspace |
+| `ctrl+.` | Toggle background switcher |
+| `ctrl+;` | Switch to next workspace |
 | `j` | Previous wallpaper (when switcher active) |
 | `k` | Next wallpaper (when switcher active) |
 
