@@ -1,6 +1,6 @@
 # RiceReact 
 
-A browser-based Linux ricing desktop environment built with React. Not for phones...
+A browser-based Linux ricing desktop environment built with React.
 
 ## Features
 
@@ -36,7 +36,6 @@ A browser-based Linux ricing desktop environment built with React. Not for phone
 
 ## Tech Stack
 - React 19
-- Vite
-- Pure CSS (no UI libraries)
-- ColorThief (via CDN) for color extraction
+- Vite 
+- ColorThief for color extraction
 
