@@ -8,7 +8,7 @@ const useWindowSwitch = (switchWindow, curr) => {
 
     useEffect(() => {
         const check = (e) => {
-            if (e.key.toLowerCase() === "i" && e.ctrlKey) {
+            if (e.key === ";" && e.ctrlKey) {
                 const next = (currRef.current + 1) % 5;
                 switchWindow(next);
             }

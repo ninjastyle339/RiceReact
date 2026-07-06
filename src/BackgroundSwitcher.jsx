@@ -42,7 +42,7 @@ function BackgroundSwitcher() {
                 setIndex(prev => (prev + 1) % background_images.length);
                 persistedIndex = (persistedIndex + 1) % background_images.length;
             }
-            if (e.ctrlKey && e.key.toLowerCase() === "b") {
+            if (e.ctrlKey && e.key === ".") {
                 setBgchange(prev => !prev);
             }
 

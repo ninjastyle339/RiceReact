@@ -7,7 +7,7 @@ const Terminal = ({ onFocus, zindex, isActive }) => {
     const centerx = window.innerWidth / 2;
     const centery = window.innerHeight / 2;
     const ypos = window.innerHeight * 0.4;
-    const [pos, setPos] = useState({ x: centerx - centerx / 2, y: centery - ypos/2 });
+    const [pos, setPos] = useState({ x: centerx - centerx / 2, y: centery - ypos / 2 });
     const spinner = ["⠋", "⠙", "⠹", "⠸", "⠼", "⠴", "⠦", "⠧", "⠇", "⠏"];
     const [size, setSize] = useState({ width: Math.max(550, window.innerWidth * 0.5), height: Math.max(500, window.innerHeight * 0.4) });
     const drag = (e) => {
@@ -81,7 +81,7 @@ const Terminal = ({ onFocus, zindex, isActive }) => {
     }, []);
     useEffect(() => {
         const handle = (e) => {
-            if (e.altKey && e.key.toLowerCase() === "t" && isActive) {
+            if (e.ctrlKey && e.key === "," && isActive) {
                 Setopen(prev => !prev);
             }
         }
